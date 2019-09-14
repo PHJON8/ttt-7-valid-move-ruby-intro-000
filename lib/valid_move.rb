@@ -9,7 +9,7 @@ end
   def position_taken?(board, index) #method name and parameters
     if board[index] == " " || board[index] ==  "" || board[index] == nil # to return true for " ", "" & nil
       return true
-    else board[index] == "X" || board[index] == "O"  #return true for "X" & "O"
+    else board[index] == "X" || board[index] == "O"  #return false for "X" & "O"
       return false
      end
      end
