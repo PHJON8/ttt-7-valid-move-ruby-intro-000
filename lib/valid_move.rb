@@ -4,13 +4,13 @@ def valid_move?(board, index)
     if board[index] == " " || board[index] ==  ""  # to return true for " ", ""
       return true
     else board[index] == "X" || board[index] == "O"  #return false for "X" & "O"
-      return false
+      return false or nil
      end
    end
 if index.between?(0,8)
    position_taken?(board, index)
    return true
 else
-   return false
+   return false or nil
 end
 end
